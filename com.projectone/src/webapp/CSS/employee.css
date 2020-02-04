@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmWOTRr3eiwk-B18P4VdG1lBSnoPCBn7sXhlVuNTZN4DP9Ypz&s);
+    background-size: cover;
+   
+}
+
+#bod {
+
+    margin-top: 10pt;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 300;
+    font-family: serif;
+    color:blueviolet;
+    background-color: cyan;
+
+}

@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <link rel="stylesheet" href='../CSS/employee.css' type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
     
+    
+<body>
+    <h2 id="bod">Welcome, Handle Your Business, Then Get Out and Get Back To Work!</h2>
+    
+    <form action="newReimbursement.do", method ="post">
+        
+        <p>How Much Did you spend?</p>
+        <input type="number" name ="amount">
+        <p>What Did you Purchase?</p>
+        <input type="text" name = "description">
+        
+        <select name="type">
+            <option value="1">Lodging</option>
+            <option value="2">Travel</option>
+            <option value="3">Food</option>
+            <option value="4">Other</option>
+        </select>
+            <button type="submit"></button>
+        </form>
+
+        
+<form action="viewreimb.go" method="GET">
+    <input type="submit" value="view reimbursement">
+</form>
+
+  
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+<script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script> -->
