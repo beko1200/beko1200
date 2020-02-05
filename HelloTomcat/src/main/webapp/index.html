@@ -1,0 +1,200 @@
+<!-- this is a coment -->
+
+<!--
+
+    What is HTML : 
+            hypertext markup language
+            used to tell the browser what to display
+            creates structure for display
+
+        HTML IS NOT A PROGRAMMING LANGUAGE; no logic
+
+    in HTML we use tags
+        they are standardized by w3c - world wide web consortium
+
+        opening tags ---- > <tagName> 
+        closing tags ---- > </tagName>
+        self closing tags --- > <tagName/>
+
+        for the first tag -- > telling browser what kind of documment it will browser
+
+-->
+
+<!DOCTYPE html>
+<! -- the rest tells the browser what it needs -->
+
+<html>
+
+<! -- now we need to give the browser information about the document 
+(metadata) -->
+
+<head>
+
+        <!-- the head is where al of the meta data is going to go
+            this is information about the data inside your document
+                such as information for languages, stuff for seo, scripts, styles, etc
+         -->
+
+         <title>
+            this is our first hmtl page
+        </title>
+
+<meta charset="UTF-8"/>
+
+<!-- 
+    this is known as internal styling
+ -->
+
+<style>
+    h2 {
+        color:red;
+
+    }
+</style>
+
+<!-- 
+    this is know as external styling
+ -->
+
+ <!-- 
+        absolute path gives directions to the resource for the 
+            outtermost directory
+
+        relative path gives direction to a resource by the director
+            that it is in
+
+  -->
+
+
+ <link rel="stylesheet" href="myStyles.css" type="text/css">
+</head>
+
+<!-- 
+    this is where we put everything we want displayed in our page.
+ -->
+
+<body>
+
+    <h1 id ='bamboo' style="color:blue">this is a heading</h1>
+    <h2 class ='java'>this is a second heading</h2>
+    <h3 class ='java'>this is a third heading</h3>
+    <h4 class ='java'>this is a fourth heading</h4>
+    <h5 class ='java'>this is a fifth heading</h5>
+    <h6 class ='java'>this is a sixth heading</h6>
+        p stands <b> for </b> paragraph</p>
+        <!--
+             two types of elements: inline and block
+         -->
+<br>
+<!-- br*50 will give you 50 tags -->
+
+<ol title ='very useful'> this is the name of my list
+    <li title= 'this is one of many'>
+        this is a first for 
+    </li>
+
+    <li>
+        this is a second
+    </li>
+</ol>
+
+<ul>
+    <li>
+        this is a first for 
+    </li>
+
+    <li>
+        this is a second
+    </li>
+</ul>
+
+<!--
+     what is an attribute?
+        a property of an element that changes the behavior and /or appearance.
+
+    what is the difference a tag and an element?
+        a tag is just a ta: <tag>
+
+        however, an element has both opening and closing tags with content
+            in between. Essentially it is the coplete thought, if it is 
+            self closing  it is an element and a tag.
+ -->
+<!-- lets make a table 
+        tags: table, thead for the head section of the table
+        tr for the table rows
+        th for the header data
+        tbody and td for just oridinary table data
+-->
+
+<table id='myTable'>
+    <thead>
+        <tr>
+            <!-- must have the tr tag or it will not work -->
+            <th>name</th>
+            <th>age</th>
+            <th>phone number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> Anthony</td>
+            <td> 22</td>
+            <td>6767879</td>
+        </tr>
+        <tr>
+            <td>Frank</td>
+            <td>27</td>
+            <td>8134435456</td>
+        </tr>
+
+        <tr>
+            <td>Jim</td>
+            <td>21</td>
+            <td>7276797676</td>
+         </tr>
+
+    </tbody>
+</table>
+
+<!-- 
+    different kinds of attributes
+        global: available to all elements
+        ex - id, class, style
+        local: available only to specific elements
+        ex - method, action, charset
+ -->
+
+<form method ='post' action ='http://www.google.com'>
+<input type="text" name="username" placeholder ="username">
+<input type="password" name= "pass" placeholder ="password">
+<input type="submit" name= "submit" value="submit">
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<br>
+<input required type="number">
+<input type="number" name="" id="">
+<input type="date" name="" id="">
+<input type="file" name="" id="">
+<input type="checkbox" name ="" id="">I am cool
+<select name="favorite places" title="fav places">
+    <option value="null">Pick your favorire destination</option>
+    <option value="turkey">Turkey</option>
+    <option value="greece">Greece</option>
+    <option value="england">England</option>
+</select>
+</form>
+<a href="http://google.com">this will take you to google</a>
+<img src="" alt="this is a missing image">
+
+<!-- 
+    href ---- > sends you to resource
+    src  < ----  brings resource to you
+ -->
+
+<div>
+    <span>this is a span</span>
+</div>
+
+
+</body>
+
+</html> 

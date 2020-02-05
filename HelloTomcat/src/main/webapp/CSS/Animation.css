@@ -1,0 +1,94 @@
+@media only screen and (min-width:750px){
+
+.around{
+    background: red;
+    height: 300px;
+    width: 300px;
+    /* border-radius: 0% 10% 25% 50%; */
+    /* display: inline-block; */
+    position: relative;
+    /* must write animation name */
+    animation-name: floatie;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floatie{
+    0%{
+        left: 0px;
+        top: 0px;
+        border-radius: 0% 0% 0% 0%;
+    }
+    25%{
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0% 0% 0%;
+    }
+    50%{
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0% 0%;
+    }
+    75%{
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 50% 0%;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        border-radius: 50% 50% 50% 50%;
+    }
+}
+}
+
+@media only screen and (max-width:749px){
+    .around{
+        background: red;
+        height: 300px;
+        width: 300px;
+        /* border-radius: 0% 10% 25% 50%; */
+        /* display: inline-block; */
+        position: relative;
+        /* must write animation name */
+        animation-name: floatie;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+
+    @keyframes floatie{
+        0%{
+            left: 0px;
+            top: 0px;
+            border-radius: 0% 0% 0% 0%;
+        }
+        25%{
+            left: 300px;
+            top: 0px;
+            border-radius: 50% 0% 0% 0%;
+        }
+        50%{
+            left: 300px;
+            top: 300px;
+            border-radius: 50% 50% 0% 0%;
+        }
+        75%{
+            left: 0px;
+            top: 300px;
+            border-radius: 50% 50% 50% 0%;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+            border-radius: 50% 50% 50% 50%;
+        
+        }
+    }
+
+}
+
+
